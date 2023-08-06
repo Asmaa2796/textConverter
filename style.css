@@ -1,0 +1,88 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #081966;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-Regular.ttf);
+}
+.hero {
+    padding: 40px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.hero h1 {text-align: center;color: #fff;}
+.hero h1 span {color: #48baf3;padding-bottom: 3px;border-bottom: 2px solid #48baf3;}
+select {
+    cursor: pointer;
+    padding: 0px 10px;
+    color: #fff;
+    appearance: none;
+  background-image: url(images/dropdown.png) !important;
+  background-repeat: no-repeat;
+  background-size: 12px 6px;
+  height: 45px;
+  background-position: right 20px center;
+  font-family: 'Nunito';
+}
+textarea::placeholder,textarea {color: #fff;}
+textarea:focus,select:focus,button:focus {outline: none}
+textarea {
+    background: #303F9F;
+    width: 92%;
+    display: block;
+    border: 1px solid #eeeeee5c;
+    border-radius: 4px;
+    min-height: 175px;
+    padding: 20px;
+    font-family: 'Nunito';
+    margin: 20px 0;
+    resize: none;
+}
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.row button {
+    background-color: #48baf3;
+    color: #fff;
+    padding: 16px 25px;
+    border: none;
+    height: 45px;
+    border-radius: 26px;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+.row button img {width: 12px;margin-right: 5px;}
+.row select {width: 80%;background-color: #303F9F;border: 1px solid #eeeeee5c;border-radius: 25px;}
+/* copyright */
+.copyright {
+    text-align: center;
+    font-size: small;
+    color: #fbfbfb;
+    margin: 20px 0;
+}
+
+
+/* media */
+@media(width <= 567px) {
+    .hero h1 {font-size: 23px;}
+    textarea {width: 86%;}
+    .row select {font-size: 10px;background-size: 9px 6px;}
+    .row button {font-size: 13px;}
+    .row button img {width: 10px;}
+}
